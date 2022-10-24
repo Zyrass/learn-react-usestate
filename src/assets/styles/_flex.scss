@@ -1,0 +1,70 @@
+/*!
+ * Partial Flex v1.0.1
+ * Copyright 2022-2030 Zyrass (Alain Guillon Author)
+ * Inspirated by Bootstrap
+ */
+
+// Display
+.d {
+  &-flex {
+    display: flex;
+  }
+  &-grid {
+    display: grid;
+  }
+}
+// FLEX EXOTIQUE
+.flex-fill {
+  display: flex;
+  flex: 1 1 auto;
+}
+// API
+.flex {
+  // Flex Direction
+  &-row {
+    flex-direction: row;
+    &-reverse {
+      flex-direction: row-reverse;
+    }
+  }
+  &-column {
+    flex-direction: column;
+    &-reverse {
+      flex-direction: column-reverse;
+    }
+  }
+  // Flex Wrap
+  &-wrap {
+    flex-wrap: wrap;
+  }
+  &-nowrap {
+    flex-wrap: nowrap;
+  }
+}
+// FLEX: justify-content
+.justify {
+  &-center {
+    justify-content: center;
+  }
+  &-between {
+    justify-content: space-between;
+  }
+  &-around {
+    justify-content: space-around;
+  }
+  &-evenly {
+    justify-content: space-evenly;
+  }
+}
+// FLEX: align-items
+.align {
+  &-center {
+    align-items: center;
+  }
+  &-start {
+    align-items: flex-start;
+  }
+  &-end {
+    align-items: flex-end;
+  }
+}

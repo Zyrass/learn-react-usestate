@@ -1,0 +1,36 @@
+.formStyle {
+  background-color: var(--secondary) !important;
+  margin-bottom: 50px;
+}
+
+.formGroup {
+  margin-bottom: 10px;
+}
+
+.inputText {
+  margin-top: 5px;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-style: italic;
+  color: var(--primary-2);
+}
+.inputRange {
+  margin-top: 5px;
+}
+
+.label {
+  text-transform: uppercase;
+  color: var(--white);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 90%;
+}

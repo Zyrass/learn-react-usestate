@@ -1,0 +1,76 @@
+.forme {
+  background-color: var(--white);
+  clip-path: polygon(
+    10% 0,
+    90% 0,
+    100% 10%,
+    100% 90%,
+    90% 100%,
+    10% 100%,
+    0 90%,
+    0 10%
+  );
+  border: 20px solid var(--secondary);
+  padding: 15px;
+  min-height: 280px;
+  width: 270px;
+  position: relative;
+  margin-right: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+
+  h3 {
+    position: absolute;
+    padding-bottom: 15px;
+    font-size: 16px;
+    top: 0;
+    left: 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white);
+    width: 100%;
+    background-color: var(--secondary);
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100%;
+
+    li {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      span {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 16px;
+        &:last-child {
+          text-transform: none;
+          color: var(--dark-green);
+          font-weight: 400;
+        }
+      }
+      &:last-child {
+        padding-top: 10px;
+        color: var(--dark-red);
+      }
+    }
+  }
+  div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 0;
+    padding-top: 15px;
+    background-color: var(--secondary);
+    color: var(--white);
+  }
+}
